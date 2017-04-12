@@ -1,11 +1,11 @@
 import './index.css';
 
 import ApolloClient, { createNetworkInterface } from 'apollo-client';
+import React, { Component } from 'react';
 import { combineReducers, createStore } from 'redux';
 
 import { ApolloProvider } from 'react-apollo';
-import ComponentWithData from './components/PostList';
-import React from 'react';
+import ComponentWithData from './components/App';
 import ReactDOM from 'react-dom';
 import reducers from './reducers';
 

@@ -9,7 +9,7 @@ import React from 'react';
 
 // import { connect } from 'react-redux';
 
-function AdGroup({id, email, name}) {
+function AdGroup(props) {
   console.log(email)
   // const adsComponents = ads.map(ad => {
   //   return <div>Weit please</div>
@@ -46,7 +46,7 @@ function PostList({ data: { loading, adGroups } }) {
 //       console.log(this.props.addValue(five))
 //   }
   
-//   render({ data: { loading, adGroups } }) {
+//   render() {
 //     console.log('INITIAL StoreState this: ',this.props.testStore)
 //     if (loading) {
 //       return <div>Loading</div>;

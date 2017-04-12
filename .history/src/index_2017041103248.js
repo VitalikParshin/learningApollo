@@ -4,7 +4,7 @@ import ApolloClient, { createNetworkInterface } from 'apollo-client';
 import { combineReducers, createStore } from 'redux';
 
 import { ApolloProvider } from 'react-apollo';
-import ComponentWithData from './components/PostList';
+import ComponentWithData from './components/App';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reducers from './reducers';
