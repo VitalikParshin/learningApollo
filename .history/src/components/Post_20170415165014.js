@@ -7,26 +7,29 @@ import { connect } from 'react-redux'
 class Post extends Component {
 
   add() {
-    const five = 5;
-    console.log("This function is working")
+    const five = "hello ";
+    console.log('function is working', five);
+    this.props.addValue(five)
   }
   
   render() {
-    console.log('INITIAL StoreState is: ', this.props.testStore)
+    console.log('INITIAL StoreState is: ', this.props.email)
     const {id, name, email} = this.props;
       
     return (
       <div>
         <li>
-          {id} 
-          {name} 
-          {email}
+          <a>{id} </a>
+          <a>{name} </a>
+          <a>{email} </a>
+          <button value="23"
+            onClick={this.add.bind(this)}
+          > add some value
+          </button>
         </li>
 
-        <button value="23"
-          onClick={this.add.bind(this)}
-        > add Five to store
-        </button>
+        
+        { this.props.emails } 
       </div>
     );
   }
@@ -34,8 +37,7 @@ class Post extends Component {
 
 export default connect(
   state => ({
-      testStore: state.auth
-    }),
+  }),
     
   dispatch => ({
     addValue: (value) => {
@@ -43,3 +45,6 @@ export default connect(
     }
   })
 )(Post);
+
+
+connect(Post())

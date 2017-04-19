@@ -1,0 +1,14 @@
+
+.main {
+    margin: 20px;
+    text-align: center
+}
+
+.input-field {
+    height: 40px;
+    width: 300px
+}
+
+.comment-button {
+    color: blue
+}
